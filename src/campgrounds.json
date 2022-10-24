@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Honeymoon Pool",
+		"district": "swan coastal south",
+		"district-id": 27,
+		"coordinates": ["33.3805°S", "115.9387°E"]
+	},
+	{
+		"name": "Nanga Mill",
+		"district": "brockman",
+		"district-id": 31,
+		"coordinates": ["lat", "lon"]
+	},
+	{
+		"name": "Drummonds",
+		"district": "avon",
+		"district-id": 36,
+		"coordinates": ["lat", "lon"]
+	},
+	{
+		"name": "Bald Hill",
+		"district": "eucla",
+		"district-id": 20,
+		"coordinates": ["lat", "lon"]
+	}
+]

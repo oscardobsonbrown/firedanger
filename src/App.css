@@ -1,38 +1,257 @@
-.App {
+@font-face {
+  font-family: 'PP Eiko';
+  src: url('./assets/fonts/ppeiko-mediumitalic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/ppeiko-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PP Fraktion Mono';
+  src: url('./assets/fonts/ppfraktionmono-regularitalic-webfont.woff2') format('woff2'),
+       url('./assets/fonts/ppfraktionmono-regularitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+
+}
+
+@font-face {
+  font-family: 'PP Fraktion';
+  src: url('./assets/fonts/ppfraktionsans-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/ppfraktionsans-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*! my code here :) */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* * {
+  font-family: "PP Fraktion Mono";
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: -2;
+  margin-top: 1.25em;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+} */
+
+body {
+  background-color: #E7D9D9;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "PP Fraktion Mono";
+  font-size: 1em;
+  font-style: italic;
+
+}
+
+main {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: "PP Fraktion Mono";
+  font-size: 1em;
+  font-style: italic;
+  letter-spacing: -2;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  width: 100%;
+}
+
+h1 {
+  font-family: "PP Eiko";
+  font-size: 2.75em;
+  font-style: italic;
+  margin-top: 20vh;
+}
+
+.logo {
+  color: #F75749;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: "PP Fraktion";
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: "PP Fraktion Mono";
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: -0.21;
+  margin-top: 1.25em;
+  width: 86vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-header {
+  margin-top: 2em;
+  width: 86vw;
+  margin-left: auto;
+  margin-right: auto
+}
+form {
+  font-family: "PP Fraktion Mono";
+  font-size: 1em;
+  font-style: italic;
+  letter-spacing: -2;
+  margin-top: 3em;
+  width: 86vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
 }
 
-.App-link {
-  color: #61dafb;
+form>label {
+  font-size: 1em;
+  margin-top: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+[type=search] {
+  min-width: 100% !important;
+  height: 44px;
+  border: solid 1px #979797;
+  background-color: #E7D9D9;
+  margin-top: 1.5em;
+  padding-left: 1em;
+  font-family: "PP Fraktion Mono";
+  font-size: 0.8em;
+  font-style: italic;
+  letter-spacing: -2;
+}
+
+[type=search]:active {
+  /* min-width: 100% !important;
+  height: 44px; */
+  border: solid 1px #454545d1;
+  background-color: #E7D9D9;
+  /* margin-top: 1.5em;
+  padding-left: 1em;
+  font-family: "PP Fraktion Mono"; */
+  font-size: 0.8em;
+  font-style: italic;
+  letter-spacing: -2;
+}
+
+ul {
+  margin-left: 1.75em;
+  margin-top: 1em;
+}
+
+li {
+  line-height: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.checkAnotherDiv {
+  /* width: 90vw; */
+  position: absolute;
+  width: 76vw;
+  border: 1px solid black;
+  border-radius: 11px;
+  padding: 1.5em;
+  text-align: center;
+  bottom: 2em;
+}
+
+.check-another {
+  /* position: absolute; */
+  bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.moderate {
+  color: #4B8B77;
+}
+
+.high {
+  color: #F29222;
+}
+
+.extreme {
+  color: #E36A4E;
+}
+
+.catastrophic {
+  color: #F84B3B;
 }
