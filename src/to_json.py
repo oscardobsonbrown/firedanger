@@ -1,51 +1,5 @@
-#!/usr/bin/env python
-from __future__ import print_function
-import ftplib
-import datetime
-import sys
 import xml.etree.ElementTree as ET
 import json
-
-# ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr14.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
-
-
-def log(msg):
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %T")
-    print('[-- {} --] {}'.format(timestamp, msg), file=sys.stderr)
-
-
-# ftp://ftp.bom.gov.au/anon/gen/fwo/IDW15100.xml
-server = 'ftp.bom.gov.au'
-directory = 'anon/gen/fwo'
-
-vcf = 'IDW15100.xml'
-
-log("connecting to server")
-ftp = ftplib.FTP(server)
-ftp.login()
-
-log("changing to directory: {}".format(directory))
-ftp.cwd(directory)
-ftp.retrlines('LIST')
-
-log("starting to download: {}".format(vcf))
-ftp.retrbinary("RETR {}".format(vcf), open(vcf, 'wb').write)
-log("finished download")
-
-ftp.quit()
-
-# Pass the path of the xml document
-tree = ET.parse('IDW15100.xml')
-
-# get the parent tag
-root = tree.getroot()
-
-# print the root (parent) tag along with its memory location
-print(root)
-
-#
-# PARSING XML FROM HERE
-#
 
 tree = ET.parse('./IDW15100.xml')
 root = tree.getroot()

@@ -15,7 +15,7 @@ const HomePage = () => {
 		// console.log(data[c].name);
 		campgrounds.push(data[c].name);
 	}
-	// console.log(campgrounds);
+	console.log(campgrounds);
 
 	// console.log(campgroundsLen);
 
