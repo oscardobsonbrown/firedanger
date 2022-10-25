@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Route, Switch, useRoute, useLocation, Link, Redirect } from "wouter";
+import { Route, Switch, useRoute } from "wouter";
 import data from "./campgrounds.json";
+import fireData from "./ftp_data.json";
 import "./App.css";
 
 const HomePage = () => {
@@ -81,7 +82,7 @@ const CampgroundPage = () => {
 			console.log(campgroundName + " Found");
 			// used "let" instead of "var" and couldn't figure out why it wasn't working
 
-			var site = data[x];
+			var site = fireData[x];
 			var danger = site.danger;
 			var dangerIndex = site.fdi;
 			console.log(site);
@@ -96,7 +97,6 @@ const CampgroundPage = () => {
 
 	if (dangerIndex < 12) {
 		// leave danger colour blank to keep text colour black
-		var dangerColour = "";
 		var dangerMeaning =
 			"The Fire Danger Index (FDI) is below 12 which means that the risk of fire is low.";
 	} else if (dangerIndex < 23) {
