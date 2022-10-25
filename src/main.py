@@ -49,12 +49,12 @@ print(root)
 # print the text contained within the subtag
 # print(root[1][1][0][0].text)
 
-dct = {}
+dct = []
 
 # print("{")
-i = 1
-for x in range(1, 48):
-    dct[i] = {}
+i = 0
+for x in range(0, 48):
+    dct[i].append('{}')
     # output.append("\t {")
 
     # get the attributes from the tag and turn into key:value pairs
@@ -101,5 +101,5 @@ print(dct)
 
 json.dumps(dct)
 
-with open("ftp_data.json", "w") as write_file:
+with open("./src/ftp_data.json", "w") as write_file:
     json.dump(dct, write_file, indent=4)
