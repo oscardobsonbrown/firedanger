@@ -1,26 +1,782 @@
 [
 	{
-		"name": "Honeymoon Pool",
-		"district": "swan coastal south",
-		"district-id": 27,
-		"coordinates": ["33.3805°S", "115.9387°E"]
+		"name": "14 mile",
+		"district": "",
+		"district-id": 8,
+		"coordinates": ["", ""]
 	},
 	{
-		"name": "Nanga Mill",
-		"district": "brockman",
-		"district-id": 31,
-		"coordinates": ["lat", "lon"]
+		"name": "Amherst Point",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
 	},
 	{
-		"name": "Drummonds",
-		"district": "avon",
-		"district-id": 36,
-		"coordinates": ["lat", "lon"]
+		"name": "Baden Powell",
+		"district": "",
+		"district-id": 20,
+		"coordinates": ["", ""]
 	},
 	{
 		"name": "Bald Hill",
-		"district": "eucla",
+		"district": "",
 		"district-id": 20,
-		"coordinates": ["lat", "lon"]
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Bandilngan (Windjana Gorge)",
+		"district": "",
+		"district-id": 4,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Banksia Camp",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Barrabup",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Belinup",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Belvidere",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Benwenerup",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Big Brook Arboretum",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Big Lagoon",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Black Moon Cliff",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Black Point",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Boat Harbour",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Boondi Rock",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Boranup",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Bottle Bay",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Breakaway",
+		"district": "",
+		"district-id": 21,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Bungarra",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Burra Rock",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Canebrake Pool",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Carey Brook - Grass Tree Hollow",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Carey Brook - Snottygobble Loop",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Cave Hill",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Charlies Flat",
+		"district": "",
+		"district-id": 27,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Chuditch",
+		"district": "",
+		"district-id": 27,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Congelin",
+		"district": "",
+		"district-id": 38,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Conto",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Credo Homestead",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Crystal Springs",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Dales",
+		"district": "",
+		"district-id": 8,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Drummonds",
+		"district": "",
+		"district-id": 36,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Dulundi (Silent Grove)",
+		"district": "",
+		"district-id": 4,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Elles Beach",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "False Entrance",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Fanny Cove",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Fernhook Falls",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Four Mile",
+		"district": "",
+		"district-id": 44,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Gnaala Mia",
+		"district": "",
+		"district-id": 38,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Goongarrie Homestead",
+		"district": "",
+		"district-id": 15,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Greens Island",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Gregories",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Henry White Oval",
+		"district": "",
+		"district-id": 25,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Herald Bight",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Hoffman Mill",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Homestead",
+		"district": "",
+		"district-id": 36,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Honeymoon Pool",
+		"district": "",
+		"district-id": 27,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Honeymoon Pool - Gelcoat",
+		"district": "",
+		"district-id": 27,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Honeymoon Pool - Stones Brook",
+		"district": "",
+		"district-id": 27,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Janes Bay",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Jarrahdene",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Jaurdi Station Homestead",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Jorndee Creek",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Karara Rangeland",
+		"district": "",
+		"district-id": 22,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Karda",
+		"district": "",
+		"district-id": 23,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Kurrajong (Purnululu)",
+		"district": "",
+		"district-id": 4,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Kurrajong Cape Range",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Lagoon",
+		"district": "",
+		"district-id": 21,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Lake Jesper - Yoondaddup",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Lake Kepwari",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Lake Mason Homestead",
+		"district": "",
+		"district-id": 14,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Le Grand Beach",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Leaning Marri",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Lucky Bay",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Maggies",
+		"district": "",
+		"district-id": 21,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Marrinup Townsite",
+		"district": "",
+		"district-id": 28,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Martins Tank",
+		"district": "",
+		"district-id": 29,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Mesa",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Miliyanha",
+		"district": "",
+		"district-id": 8,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Miners",
+		"district": "",
+		"district-id": 21,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Mitchell Falls",
+		"district": "",
+		"district-id": 1,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Moingup Springs",
+		"district": "",
+		"district-id": 42,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Mount Ragged",
+		"district": "",
+		"district-id": 47,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Nanga Brook",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Nanga Mill",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Nanga Townsite",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Neds",
+		"district": "",
+		"district-id": 21,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Nicks Camp",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "North Kurrajong",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "North Lefroy",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "North Mandu",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "One K",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Osprey Bay",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Peak Charles",
+		"district": "",
+		"district-id": 47,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Perth Hills Discovery Centre",
+		"district": "",
+		"district-id": 28,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Point Billie",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Point Road",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Potters Gorge",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Rowles Lagoon",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Sandy Point",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Seal Creek",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Shannon",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Shannon Horse Camp",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Shelter Bay at Steep Point",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Shoal Cape",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Skippy Rock (Stokes)",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "South Gregories",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "South Lefroy Bay",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "St Mary Inlet",
+		"district": "",
+		"district-id": 44,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Stans Camp",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Stargazars",
+		"district": "",
+		"district-id": 8,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Steep Point",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Stevens Camp",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Stockton Lake",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Stringers",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Sues Bridge",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Temple Gorge",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "The Cut",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "The Ridge",
+		"district": "",
+		"district-id": 12,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Tonys Bend",
+		"district": "",
+		"district-id": 28,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Tulki Beach",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Valley",
+		"district": "",
+		"district-id": 36,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Victoria Rock",
+		"district": "",
+		"district-id": 16,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Walardi",
+		"district": "",
+		"district-id": 4,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Wallaroo Rock",
+		"district": "",
+		"district-id": 35,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Walyunga",
+		"district": "",
+		"district-id": 26,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Wanagarren",
+		"district": "",
+		"district-id": 23,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Warner Glen",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Warren",
+		"district": "",
+		"district-id": 33,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Waychinicup Inlet",
+		"district": "",
+		"district-id": 43,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Winderabandi",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Wolfe Creek Crater",
+		"district": "",
+		"district-id": 1,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Workmans Pool",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Wrights Bridge",
+		"district": "",
+		"district-id": 30,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Yardie",
+		"district": "",
+		"district-id": 10,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Yarragil",
+		"district": "",
+		"district-id": 31,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Yeo Lake Homestead",
+		"district": "",
+		"district-id": 15,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Yokinup Mia Mia",
+		"district": "",
+		"district-id": 46,
+		"coordinates": ["", ""]
+	},
+	{
+		"name": "Yonga Walk Trail Campground",
+		"district": "",
+		"district-id": 23,
+		"coordinates": ["", ""]
 	}
 ]
