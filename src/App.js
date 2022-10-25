@@ -74,15 +74,22 @@ const HomePage = () => {
 
 const CampgroundPage = () => {
 	const [, params] = useRoute("/:name");
-	let campgroundName = params.name.replace(/-/g, " ");
+	// campgroundName
+	let makeSpace = params.name.replace(/-/g, " ");
+	let campgroundName = makeSpace.replace("%E2%80%93", "–");
 
 	// solution to find the values in json came from this stackoverflow piece: https://stackoverflow.com/questions/19253753/javascript-find-json-value
 	for (var x = 0; x < data.length; x++) {
 		if (data[x].name === campgroundName) {
 			console.log(campgroundName + " Found");
 			// used "let" instead of "var" and couldn't figure out why it wasn't working
+			// !!! THIS GOES THROUGH THE LIST BUT DOESN'T FIND THE CORRESPONDING CAMPGROUND YIKES
+			console.log(fireData[x]);
 
-			var site = fireData[x];
+			console.log(data[x]["district-id"]);
+			let f = data[x]["district-id"];
+
+			var site = fireData[f];
 			var danger = site.danger;
 			var dangerIndex = site.fdi;
 			console.log(site);
