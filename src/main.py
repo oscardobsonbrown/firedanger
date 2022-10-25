@@ -43,63 +43,59 @@ root = tree.getroot()
 # print the root (parent) tag along with its memory location
 print(root)
 
-# print the attributes of the first tag
-# print(root[0].attrib)
+#
+# PARSING XML FROM HERE
+#
 
-# print the text contained within the subtag
-# print(root[1][1][0][0].text)
+tree = ET.parse('./IDW15100.xml')
+root = tree.getroot()
 
-dct = []
+districtList = []
 
 # print("{")
-i = 0
-for x in range(0, 48):
-    dct[i].append('{}')
-    # output.append("\t {")
+i = 1
+for x in range(1, 48):
+    campground = {}
+    # print(campground)
 
     # get the attributes from the tag and turn into key:value pairs
     # fixed thanks to: https://www.freecodecamp.org/news/keyerror-in-python-how-to-fix-dictionary-error/
     s = root[1][i].attrib
-    # print("\t \t 'district' :", "'", s['description'], "',")
     strDistrict = str(s['description'])
     lowerDistrict = strDistrict.lower()
-    dct[i] = {'district': lowerDistrict}
+    campground[i] = {'district': lowerDistrict}
+    # print(campground)
+
     # get the fire danger index from the xml file
-    fdi = int(root[1][i][0][0].text)
+    fdi = int((root[1][i][0][0].text))
 
     if fdi < 12:
-        # print("\t \t 'danger': 'no rating',")
-        dct[i].update({'danger': 'no rating'})
-        # print("\t \t 'fdi': ", int(root[1][i][0][0].text), ",")
-        dct[i].update({'fdi': fdi})
+        campground[i].update({'danger': 'no rating'})
+        campground[i].update({'fdi': fdi})
+
     elif fdi < 23:
-        # print("\t \t 'danger': 'moderate',")
-        dct[i].update({'danger': 'moderate'})
-        # print("\t \t 'fdi':", int(root[1][i][0][0].text), ",")
-        dct[i].update({'fdi': fdi})
+        campground[i].update({'danger': 'moderate'})
+        campground[i].update({'fdi': fdi})
+
     elif fdi < 49:
-        # print("\t \t 'danger': 'high',")
-        dct[i].update({'danger': 'high'})
-        # print("\t \t 'fdi':", int(root[1][i][0][0].text), ",")
-        dct[i].update({'fdi': fdi})
+        campground[i].update({'danger': 'high'})
+        campground[i].update({'fdi': fdi})
+
     elif fdi < 99:
-        # print("\t \t 'danger': 'extreme',")
-        dct[i].update({'danger': 'extreme'})
-        # print("\t \t 'fdi':", int(root[1][i][0][0].text), ",")
-        dct[i].update({'fdi': fdi})
+        campground[i].update({'danger': 'extreme'})
+        campground[i].update({'fdi': fdi})
+
     else:
-        # print("\t \t 'danger': 'catastrophic',")
-        dct[i].update({'danger': 'catastrophic'})
-        # print("\t \t 'fdi':", int(root[1][i][0][0].text), ",")
-        dct[i].update({'fdi': fdi})
-    # print("\t }")
-    print(dct[i])
+        campground[i].update({'danger': '⚠️ catastrophic'})
+        campground[i].update({'fdi': fdi})
+
+    print(campground[i])
+    districtList.append(campground[i])
     i += 1
-# print("}")
 
-print(dct)
+print(districtList)
 
-json.dumps(dct)
+json.dumps(districtList)
 
 with open("./src/ftp_data.json", "w") as write_file:
-    json.dump(dct, write_file, indent=4)
+    json.dump(districtList, write_file, indent=4)
