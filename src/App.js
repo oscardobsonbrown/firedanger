@@ -127,7 +127,7 @@ const CampgroundPage = () => {
 			<h1>{campgroundName}</h1>
 			<div>
 				<h2 className={danger}>{danger}</h2>
-				<p>Campfired Permitted: {campfiresPermitted}</p>
+				<p>Campfire Status: {campfiresPermitted}</p>
 			</div>
 
 			<p>{dangerMeaning}</p>
