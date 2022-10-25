@@ -56,8 +56,10 @@ const HomePage = () => {
 				campfire at a campsite and the difficulties of finding that information.
 			</p>
 			<div className="search-header">
-				<div className="search-text">Search for a Campsite:</div>
-				<input id="search-box" onChange={filterBySearch} type="search" />
+				<form>
+					<label for="search-box">Search for a Campsite:</label>
+					<input id="search-box" onChange={filterBySearch} type="search" />
+				</form>
 			</div>
 			<div id="campground-list">
 				<ul>
