@@ -55,6 +55,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  background-color: #E7D9D9;
 }
 ol, ul {
   list-style: none;
@@ -95,7 +96,7 @@ table {
   line-height: 1.4;
 } */
 
-body {
+#root {
   background-color: #E7D9D9;
   width: 90vw;
   margin-left: auto;
@@ -137,6 +138,20 @@ h1 {
 .logo {
   color: #7e170d;
   text-align: center;
+}
+
+.footer {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.068);
+  text-align: center;
+  height: 3em;
+  padding-top: 0.5em;
+  /* margin-left: 5em !important; */
+}
+
+.notItalic {
+  font-style: normal;
+  text-decoration: underline;
 }
 
 h2 {
