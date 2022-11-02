@@ -32,6 +32,6 @@ jobs:
           git commit -m "update data" -a
           
       - name: push changes
-        uses: ad-m/github-push-action@main
+        uses: internetoscar/firedanger@main
         with:
           branch: main 
