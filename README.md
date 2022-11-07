@@ -46,17 +46,13 @@
 
 ![FireDanger App Preview](https://raw.githubusercontent.com/InternetOscar/firedanger/main/Scene%2014.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+There are many great forecasts available; however, I didn't find any that allowed me to see the fire danger let alone the campfire rules for specific campsites. I wanted to create a web app so great you won't need to look further than here
 
 Here's why:
 
--  Your time should be focused on creating something amazing. A project that solves a problem and helps others
--  You shouldn't be doing the same tasks over and over like creating a README from scratch
--  You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+-  I loved camping and campfires are quintessential to the camping experience
+-  You shouldn't need a degree in Google to figure out if you can have a campfire
+-  You should be able to quickly and easily determine if you can have a campfire or not
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
