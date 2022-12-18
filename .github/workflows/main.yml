@@ -1,3 +1,5 @@
+name: "Should Work"
+
 jobs:
   job1:
     name: Modifiy repository files
