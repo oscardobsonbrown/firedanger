@@ -1,3 +1,2 @@
-astunparse==4.0.0
 protobuf==4.21.4
 six==1.16.0
