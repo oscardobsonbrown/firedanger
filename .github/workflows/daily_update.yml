@@ -1,5 +1,7 @@
 name: Update + Push Daily Update
-on: [workflow_dispatch]
+on:
+  schedule:
+    cron: '* 22 * * *
 jobs:
   daily-update:
     runs-on: ubuntu-latest
