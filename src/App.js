@@ -52,9 +52,11 @@ const HomePage = () => {
 		<>
 			<h1 className="logo">FireDanger</h1>
 			<p>
-				FireDanger is a home made app inspired by the difficulty of figuring out if I can have a
-				campfire at a campsite and the difficulties of finding that information.
+				FireDanger is a home-made app with the strict purpose of displaying the fire danger index and whether or not you can have a campfire in todays conditions
 			</p>
+		<p>
+		⚠️ Please check with local authorities before lighting fires due to the summer fire ban from Dec 1 to March 31 ⚠️
+		</p>
 			<div className="search-header">
 				<form>
 					<label for="search-box">Search for a Campsite:</label>
