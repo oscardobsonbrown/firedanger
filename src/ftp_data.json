@@ -11,8 +11,8 @@
     },
     {
         "district": "broome coast",
-        "danger": "no rating",
-        "fdi": 11
+        "danger": "moderate",
+        "fdi": 16
     },
     {
         "district": "kimberley inland",
@@ -22,27 +22,27 @@
     {
         "district": "central pilbara",
         "danger": "moderate",
-        "fdi": 21
+        "fdi": 19
     },
     {
         "district": "hedland",
-        "danger": "high",
-        "fdi": 26
+        "danger": "moderate",
+        "fdi": 21
     },
     {
         "district": "burrup",
-        "danger": "high",
-        "fdi": 26
+        "danger": "moderate",
+        "fdi": 21
     },
     {
         "district": "ashburton inland",
         "danger": "moderate",
-        "fdi": 17
+        "fdi": 15
     },
     {
         "district": "ashburton coast",
         "danger": "moderate",
-        "fdi": 18
+        "fdi": 16
     },
     {
         "district": "exmouth gulf coast",
@@ -52,7 +52,7 @@
     {
         "district": "north interior",
         "danger": "moderate",
-        "fdi": 19
+        "fdi": 18
     },
     {
         "district": "gascoyne coast",
@@ -71,13 +71,13 @@
     },
     {
         "district": "north goldfields",
-        "danger": "no rating",
-        "fdi": 11
+        "danger": "moderate",
+        "fdi": 13
     },
     {
         "district": "south goldfields",
         "danger": "moderate",
-        "fdi": 18
+        "fdi": 17
     },
     {
         "district": "west interior",
@@ -87,17 +87,17 @@
     {
         "district": "central interior",
         "danger": "moderate",
-        "fdi": 14
+        "fdi": 12
     },
     {
         "district": "south interior",
         "danger": "moderate",
-        "fdi": 13
+        "fdi": 16
     },
     {
         "district": "eucla",
-        "danger": "moderate",
-        "fdi": 17
+        "danger": "high",
+        "fdi": 30
     },
     {
         "district": "midwest coast",
@@ -122,7 +122,7 @@
     {
         "district": "swan coastal north",
         "danger": "no rating",
-        "fdi": 8
+        "fdi": 7
     },
     {
         "district": "swan inland north",
@@ -132,12 +132,12 @@
     {
         "district": "swan coastal south",
         "danger": "no rating",
-        "fdi": 8
+        "fdi": 7
     },
     {
         "district": "swan inland south",
         "danger": "no rating",
-        "fdi": 2
+        "fdi": 3
     },
     {
         "district": "geographe",
@@ -167,47 +167,47 @@
     {
         "district": "mortlock",
         "danger": "moderate",
-        "fdi": 13
+        "fdi": 12
     },
     {
         "district": "karroun",
         "danger": "moderate",
-        "fdi": 14
+        "fdi": 13
     },
     {
         "district": "avon",
         "danger": "moderate",
-        "fdi": 14
+        "fdi": 12
     },
     {
         "district": "lockwood",
         "danger": "moderate",
-        "fdi": 15
+        "fdi": 12
     },
     {
         "district": "arthur",
         "danger": "no rating",
-        "fdi": 10
+        "fdi": 9
     },
     {
         "district": "roe",
         "danger": "moderate",
-        "fdi": 16
+        "fdi": 12
     },
     {
         "district": "lakes",
         "danger": "moderate",
-        "fdi": 20
+        "fdi": 16
     },
     {
         "district": "stirling north",
         "danger": "moderate",
-        "fdi": 13
+        "fdi": 12
     },
     {
         "district": "stirling west",
         "danger": "moderate",
-        "fdi": 16
+        "fdi": 13
     },
     {
         "district": "stirling coast",
@@ -216,13 +216,13 @@
     },
     {
         "district": "fitzgerald coast",
-        "danger": "moderate",
-        "fdi": 22
+        "danger": "high",
+        "fdi": 31
     },
     {
         "district": "fitzgerald inland",
         "danger": "high",
-        "fdi": 32
+        "fdi": 29
     },
     {
         "district": "esperance coast",
@@ -231,7 +231,7 @@
     },
     {
         "district": "esperance inland",
-        "danger": "high",
-        "fdi": 29
+        "danger": "moderate",
+        "fdi": 18
     }
 ]
