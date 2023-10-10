@@ -1,27 +1,3 @@
-@font-face {
-	font-family: "PP Eiko";
-	src: url("./assets/fonts/ppeiko-mediumitalic-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppeiko-mediumitalic-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: "Inclusive Sans", sans-serif;
-	src: url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: "PP Fraktion";
-	src: url("./assets/fonts/ppfraktionsans-bold-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppfraktionsans-bold-webfont.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-}
-
 @import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
 
 /* http://meyerweb.com/eric/tools/css/reset/
