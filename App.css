@@ -1,0 +1,356 @@
+@font-face {
+	font-family: "PP Eiko";
+	src: url("./assets/fonts/ppeiko-mediumitalic-webfont.woff2") format("woff2"),
+		url("./assets/fonts/ppeiko-mediumitalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Inclusive Sans", sans-serif;
+	src: url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff2") format("woff2"),
+		url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "PP Fraktion";
+	src: url("./assets/fonts/ppfraktionsans-bold-webfont.woff2") format("woff2"),
+		url("./assets/fonts/ppfraktionsans-bold-webfont.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #f3f1ee;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*! my code here :) */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* * {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: -2;
+  margin-top: 1.25em;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+} */
+
+#root {
+	background-color: #f3f1ee;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 1em;
+	/* font-style: italic; */
+}
+
+main {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 1em;
+	font-style: italic;
+	letter-spacing: -2;
+	color: #13190d;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	width: 100%;
+}
+
+h1 {
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 2.75em;
+	font-style: italic;
+	margin-top: 20vh;
+}
+
+.logo {
+	color: #ec5d57;
+	text-align: center;
+}
+
+.subtitle {
+	color: #13190d;
+}
+
+.footer {
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.068);
+	text-align: center;
+	height: 3em;
+	padding-top: 0.5em;
+	/* margin-left: 5em !important; */
+}
+
+.notItalic {
+	font-style: normal;
+	text-decoration: underline;
+}
+
+h2 {
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+p {
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	letter-spacing: -0.21;
+	margin-top: 1.25em;
+	width: 86vw;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.4;
+}
+
+.search-header {
+	margin-top: 2em;
+	width: 86vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+form {
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 1em;
+	font-style: italic;
+	letter-spacing: -2;
+	margin-top: 3em;
+	width: 86vw;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.4;
+}
+
+form > label {
+	font-size: 1em;
+	margin-top: 2em;
+}
+
+[type="search"] {
+	min-width: 100% !important;
+	height: 44px;
+	border: solid 1px #979797;
+	background-color: #f3f1ee;
+	margin-top: 1.5em;
+	padding-left: 1em;
+	font-family: "Inclusive Sans", sans-serif;
+	font-size: 0.8em;
+	font-style: italic;
+	letter-spacing: -2;
+}
+
+[type="search"]:active {
+	/* min-width: 100% !important;
+  height: 44px; */
+	border: solid 1px #454545d1;
+	background-color: #f3f1ee;
+	/* margin-top: 1.5em;
+  padding-left: 1em;
+  font-family: 'Inclusive Sans', sans-serif; */
+	font-size: 0.8em;
+	font-style: italic;
+	letter-spacing: -2;
+}
+
+ul {
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+li {
+	line-height: 2em;
+}
+
+a {
+	text-decoration: none;
+	color: #13190d;
+}
+
+.checkAnotherDiv {
+	/* width: 90vw; */
+	position: absolute;
+	width: 76vw;
+	border: 1px solid #13190d;
+	border-radius: 11px;
+	padding: 1.5em;
+	text-align: center;
+	bottom: 2em;
+}
+
+.check-another {
+	/* position: absolute; */
+	bottom: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.moderate {
+	color: #58c148;
+}
+
+.high {
+	color: #2e6bf6;
+}
+
+.extreme {
+	color: #ee7eec;
+}
+
+.catastrophic {
+	color: #ec5d57;
+}
