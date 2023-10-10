@@ -1,26 +1,4 @@
-@font-face {
-	font-family: "PP Eiko";
-	src: url("./assets/fonts/ppeiko-mediumitalic-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppeiko-mediumitalic-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: "PP Fraktion Mono";
-	src: url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppfraktionmono-regularitalic-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: "PP Fraktion";
-	src: url("./assets/fonts/ppfraktionsans-bold-webfont.woff2") format("woff2"),
-		url("./assets/fonts/ppfraktionsans-bold-webfont.woff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap");
 
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -130,7 +108,7 @@ section {
 }
 body {
 	line-height: 1;
-	background-color: #e7d9d9;
+	background-color: #f3f1ee;
 }
 ol,
 ul {
@@ -164,7 +142,7 @@ table {
 }
 
 /* * {
-  font-family: "PP Fraktion Mono";
+  font-family: 'Inclusive Sans', sans-serif;
   font-size: 15px;
   font-style: italic;
   letter-spacing: -2;
@@ -176,13 +154,13 @@ table {
 } */
 
 #root {
-	background-color: #e7d9d9;
+	background-color: #f3f1ee;
 	width: 90vw;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: "PP Fraktion Mono";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 1em;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 main {
@@ -194,11 +172,11 @@ main {
 button {
 	background-color: transparent;
 	border: none;
-	font-family: "PP Fraktion Mono";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 1em;
 	font-style: italic;
 	letter-spacing: -2;
-	color: black;
+	color: #13190d;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -207,15 +185,19 @@ button {
 }
 
 h1 {
-	font-family: "PP Eiko";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 2.75em;
 	font-style: italic;
 	margin-top: 20vh;
 }
 
 .logo {
-	color: #7e170d;
+	color: #ec5d57;
 	text-align: center;
+}
+
+.subtitle {
+	color: #13190d;
 }
 
 .footer {
@@ -233,14 +215,14 @@ h1 {
 }
 
 h2 {
-	font-family: "PP Fraktion";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 2em;
 	font-weight: bold;
 	margin-top: 1em;
 }
 
 p {
-	font-family: "PP Fraktion Mono";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 15px;
 	font-style: italic;
 	letter-spacing: -0.21;
@@ -258,7 +240,7 @@ p {
 	margin-right: auto;
 }
 form {
-	font-family: "PP Fraktion Mono";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 1em;
 	font-style: italic;
 	letter-spacing: -2;
@@ -278,10 +260,10 @@ form > label {
 	min-width: 100% !important;
 	height: 44px;
 	border: solid 1px #979797;
-	background-color: #e7d9d9;
+	background-color: #f3f1ee;
 	margin-top: 1.5em;
 	padding-left: 1em;
-	font-family: "PP Fraktion Mono";
+	font-family: "Inclusive Sans", sans-serif;
 	font-size: 0.8em;
 	font-style: italic;
 	letter-spacing: -2;
@@ -291,10 +273,10 @@ form > label {
 	/* min-width: 100% !important;
   height: 44px; */
 	border: solid 1px #454545d1;
-	background-color: #e7d9d9;
+	background-color: #f3f1ee;
 	/* margin-top: 1.5em;
   padding-left: 1em;
-  font-family: "PP Fraktion Mono"; */
+  font-family: 'Inclusive Sans', sans-serif; */
 	font-size: 0.8em;
 	font-style: italic;
 	letter-spacing: -2;
@@ -311,14 +293,14 @@ li {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #13190d;
 }
 
 .checkAnotherDiv {
 	/* width: 90vw; */
 	position: absolute;
 	width: 76vw;
-	border: 1px solid black;
+	border: 1px solid #13190d;
 	border-radius: 11px;
 	padding: 1.5em;
 	text-align: center;
@@ -334,17 +316,17 @@ a {
 }
 
 .moderate {
-	color: #4b8b77;
+	color: #58c148;
 }
 
 .high {
-	color: #f29222;
+	color: #2e6bf6;
 }
 
 .extreme {
-	color: #e36a4e;
+	color: #ee7eec;
 }
 
 .catastrophic {
-	color: #f84b3b;
+	color: #ec5d57;
 }

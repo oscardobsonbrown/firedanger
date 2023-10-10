@@ -26,7 +26,7 @@ var HomePage = () => {
 	return (
 		<>
 			<h1 className="logo">FireDanger</h1>
-			<p>
+			<p className="subtitle">
 				FireDanger is a home-made app with the strict purpose of displaying the fire danger
 				index and whether or not you can have a campfire in todays conditions
 			</p>
