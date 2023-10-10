@@ -1,93 +1,73 @@
 import { useState } from "react";
 import { Route, Switch, useRoute } from "wouter";
-import data from "./campgrounds.json";
+import rawData from "./campgrounds.json";
 import fireData from "./ftp_data.json";
 import "./App.css";
 
-const HomePage = () => {
-	// const campgrounds = ["Honeymoon Pool", "Nanga Mill", "Drummonds", "Bald Hill"];
-	const campgroundUrlName = [];
+console.log(rawData);
+const users = rawData;
 
-	// create a list of campgrounds from the JSON file
-	var campgroundsLen = data.length;
-	var campgrounds = [];
-	for (var c = 0; c < campgroundsLen; c++) {
-		// console.log(data[c].name);
-		campgrounds.push(data[c].name);
-	}
-	console.log(campgrounds);
+var HomePage = () => {
+	// --- PAGE LOAD ---
+	const [searchItem, setSearchItem] = useState("");
+	const [filteredUsers, setFilteredUsers] = useState(users);
 
-	// console.log(campgroundsLen);
+	const handleInputChange = (e) => {
+		const searchTerm = e.target.value;
+		setSearchItem(searchTerm);
 
-	// create the list of campground URL's by going though the campgrounds array above and inserting a hyphen wherever there's a space
-	var arrayLen = campgrounds.length;
-	for (var i = 0; i < arrayLen; i++) {
-		// get the value before adding hyphen
-		// console.log(campgrounds[i]);
-		// add the hyphen
-		const newName = campgrounds[i].replace(/\s+/g, "-");
-		// get the value after adding the hyphen
-		// console.log(newName);
-		// add the value to the array of matching URLs
-		campgroundUrlName.push(newName);
-		// check that the array is working as intended
-		// console.log(campgroundUrlName);
-	}
+		const filteredItems = users.filter((user) =>
+			user.name.toLowerCase().includes(searchTerm.toLowerCase())
+		);
 
-	const [filteredList, setFilteredList] = new useState(campgrounds);
-	const filterBySearch = (event) => {
-		// Access input value
-		const query = event.target.value;
-		// Create copy of item list
-		var updatedCampgrounds = [...campgrounds];
-		// Include all elements which includes the search query
-		updatedCampgrounds = updatedCampgrounds.filter((campground) => {
-			return campground.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-		});
-		// Trigger render with updated values
-		setFilteredList(updatedCampgrounds);
+		setFilteredUsers(filteredItems);
 	};
 
 	return (
 		<>
 			<h1 className="logo">FireDanger</h1>
 			<p>
-				FireDanger is a home-made app with the strict purpose of displaying the fire danger index and whether or not you can have a campfire in todays conditions
+				FireDanger is a home-made app with the strict purpose of displaying the fire danger
+				index and whether or not you can have a campfire in todays conditions
 			</p>
-		
-			<div className="search-header">
-				<form>
-					<label for="search-box">Search for a Campsite:</label>
-					<input id="search-box" onChange={filterBySearch} type="search" />
-				</form>
-			</div>
-			<div id="campground-list">
+			{/* <p>
+				⚠️ Please check with local authorities before lighting fires due to the summer fire ban
+				from Dec 1 to March 31 ⚠️
+			</p> */}
+			<>
+				<input
+					type="search"
+					value={searchItem}
+					onChange={handleInputChange}
+					placeholder="Type to search"
+				/>
 				<ul>
-					{filteredList.map((campground, i) => (
-						<li key={i}>
-							<a href={campgroundUrlName[i]}>{campground}</a>
+					{filteredUsers.map((user) => (
+						<li key={user.id}>
+							<a href={user.name}>{user.name}</a>
 						</li>
 					))}
 				</ul>
-			</div>
+			</>
 		</>
 	);
 };
 
-const CampgroundPage = () => {
-	const [, params] = useRoute("/:name");
+var CampgroundPage = () => {
+	var [, params] = useRoute("/:name");
 	// campgroundName
-	let makeSpace = params.name.replace(/-/g, " ");
-	let campgroundName = makeSpace.replace("%E2%80%93", "–");
+	// let makeSpace = params.name.replace(/-/g, " ");
+	let makeSpace = params.name.replaceAll("%20", " ");
+	let campgroundName = makeSpace.replaceAll("%E2%80%93", " - ");
 
 	// solution to find the values in json came from this stackoverflow piece: https://stackoverflow.com/questions/19253753/javascript-find-json-value
-	for (var x = 0; x < data.length; x++) {
-		if (data[x].name === campgroundName) {
+	for (var x = 0; x < rawData.length; x++) {
+		if (rawData[x].name === campgroundName) {
 			console.log(campgroundName + " Found");
 			console.log(fireData[x]);
 
-			console.log(data[x]["district-id"]);
-			let f = data[x]["district-id"];
+			console.log(rawData[x]["district-id"]);
+			let f = rawData[x]["district-id"];
 
 			var site = fireData[f];
 			var danger = site.danger;
@@ -97,11 +77,12 @@ const CampgroundPage = () => {
 		}
 	}
 
-	// if (x >= data.length) {
+	// if (x >= rawData.length) {
 	// 	console.log("poop");
 	// 	window.location.replace("/");
 	// }
 
+	// TODO: Use a switch statement instead of elseif's
 	if (dangerIndex < 12) {
 		var campfiresPermitted = "✅";
 		// leave danger colour blank to keep text colour black
@@ -115,7 +96,7 @@ const CampgroundPage = () => {
 		var dangerMeaning =
 			"There's a heightened risk. Be alert for fires in your area. Decide what you will do if a fire starts. If a fire starts, your life and property may be at risk. The safest option is to avoid bush fire risk areas.";
 	} else if (dangerIndex < 99) {
-		var campfiresPermitted = "🚫";
+		var campfiresPermitted = "🚫🚫";
 		var dangerMeaning =
 			"These are dangerous fire conditions. \n Check your bush fire plan and ensure that your property is fire ready. \n If a fire starts, take immediate action. If you and your property are not prepared to the highest level, go to a safer location well before the fire impacts. \n Reconsider travel through bush fire risk areas.";
 	} else {
@@ -142,7 +123,7 @@ const CampgroundPage = () => {
 	);
 };
 
-const NotFound = () => {
+var NotFound = () => {
 	return (
 		<>
 			<h1>Uh oh</h1>
@@ -162,7 +143,6 @@ export default function App() {
 			<Switch>
 				<Route path="/" component={HomePage}></Route>
 				<Route path="/:name" component={CampgroundPage}></Route>
-
 				<Route path="/:rest*" component={NotFound}></Route>
 			</Switch>
 		</div>
