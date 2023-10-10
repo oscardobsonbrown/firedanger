@@ -139,17 +139,6 @@ var NotFound = () => {
 
 export default function App() {
 	return (
-		<>
-			<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WET1ZSLZ3W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WET1ZSLZ3W');
-</script>
-		</>
 		<div>
 			<Switch>
 				<Route path="/" component={HomePage}></Route>
