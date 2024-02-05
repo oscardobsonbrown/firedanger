@@ -82,7 +82,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 -  [ ] Add Changelog
 -  [ ] Add back to top links
 -  [x] Create automatic collection and parsing of data every day
--  [ ] Fix search function
+-  [x] Fix search function
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
