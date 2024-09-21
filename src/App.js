@@ -114,11 +114,10 @@ var CampgroundPage = () => {
 			</div>
 
 			<p>{dangerMeaning}</p>
-			<div className="checkAnotherDiv">
-				<a href="/" className="check-another">
-					Check another location
-					</div>
-					</a>
+
+			<a href="/" className="check-another">
+				<div className="checkAnotherDiv">Check another location</div>
+			</a>
 		</>
 	);
 };
