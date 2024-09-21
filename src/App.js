@@ -117,8 +117,8 @@ var CampgroundPage = () => {
 			<div className="checkAnotherDiv">
 				<a href="/" className="check-another">
 					Check another location
-				</a>
-			</div>
+					</div>
+					</a>
 		</>
 	);
 };
@@ -128,11 +128,9 @@ var NotFound = () => {
 		<>
 			<h1>Uh oh</h1>
 			<p>Something went wrong and I couldn't find the page you're looking for.</p>
-			<div className="checkAnotherDiv">
-				<a href="/" className="check-another">
-					Back to the Homepage
-				</a>
-			</div>
+			<a href="/" className="check-another">
+				<div className="checkAnotherDiv">Back to the Homepage</div>
+			</a>
 		</>
 	);
 };
