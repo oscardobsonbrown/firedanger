@@ -1,0 +1,26 @@
+name: "Should Work"
+
+on: workflow_dispatch
+
+jobs:
+  name: Modifiy repository files
+  uses: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2.3.2
+      - name: Modifiy the specific files using scripts
+        run: |
+          python ./src/main.py
+
+
+      - name: Modifiy the specific files using action
+        uses: action-owner/action-repo@ref
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "internetoscar"
+          git config --global user.email "oscar@oscardb.xyz"
+
+          git add -A
+          git commit -m "commit message"
+          git push
