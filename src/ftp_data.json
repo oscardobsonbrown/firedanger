@@ -2,117 +2,117 @@
     {
         "district": "north kimberley",
         "danger": "moderate",
-        "fdi": 21
+        "fdi": 20
     },
     {
         "district": "derby coast",
-        "danger": "moderate",
-        "fdi": 22
-    },
-    {
-        "district": "broome coast",
-        "danger": "moderate",
-        "fdi": 19
-    },
-    {
-        "district": "kimberley inland",
-        "danger": "moderate",
-        "fdi": 21
-    },
-    {
-        "district": "central pilbara",
-        "danger": "moderate",
-        "fdi": 19
-    },
-    {
-        "district": "hedland",
         "danger": "high",
         "fdi": 23
     },
     {
+        "district": "broome coast",
+        "danger": "moderate",
+        "fdi": 21
+    },
+    {
+        "district": "kimberley inland",
+        "danger": "moderate",
+        "fdi": 20
+    },
+    {
+        "district": "central pilbara",
+        "danger": "high",
+        "fdi": 24
+    },
+    {
+        "district": "hedland",
+        "danger": "high",
+        "fdi": 37
+    },
+    {
         "district": "burrup",
         "danger": "high",
-        "fdi": 38
+        "fdi": 34
     },
     {
         "district": "ashburton inland",
         "danger": "high",
-        "fdi": 26
+        "fdi": 24
     },
     {
         "district": "ashburton coast",
         "danger": "high",
-        "fdi": 34
+        "fdi": 32
     },
     {
         "district": "exmouth gulf coast",
-        "danger": "extreme",
-        "fdi": 49
+        "danger": "high",
+        "fdi": 37
     },
     {
         "district": "north interior",
         "danger": "moderate",
-        "fdi": 22
+        "fdi": 20
     },
     {
         "district": "gascoyne coast",
         "danger": "high",
-        "fdi": 31
+        "fdi": 38
     },
     {
         "district": "gascoyne inland",
         "danger": "high",
-        "fdi": 26
+        "fdi": 38
     },
     {
         "district": "yalgar",
         "danger": "high",
-        "fdi": 25
+        "fdi": 34
     },
     {
         "district": "north goldfields",
         "danger": "high",
-        "fdi": 28
+        "fdi": 31
     },
     {
         "district": "south goldfields",
         "danger": "high",
-        "fdi": 33
+        "fdi": 28
     },
     {
         "district": "west interior",
         "danger": "high",
-        "fdi": 26
+        "fdi": 34
     },
     {
         "district": "central interior",
         "danger": "high",
-        "fdi": 31
+        "fdi": 34
     },
     {
         "district": "south interior",
         "danger": "high",
-        "fdi": 34
+        "fdi": 32
     },
     {
         "district": "eucla",
         "danger": "high",
-        "fdi": 31
+        "fdi": 26
     },
     {
         "district": "midwest coast",
         "danger": "high",
-        "fdi": 30
+        "fdi": 35
     },
     {
         "district": "midwest inland",
         "danger": "high",
-        "fdi": 29
+        "fdi": 35
     },
     {
         "district": "lesueur",
         "danger": "high",
-        "fdi": 25
+        "fdi": 26
     },
     {
         "district": "yarra yarra",
@@ -122,12 +122,12 @@
     {
         "district": "swan coastal north",
         "danger": "moderate",
-        "fdi": 16
+        "fdi": 19
     },
     {
         "district": "swan inland north",
         "danger": "moderate",
-        "fdi": 19
+        "fdi": 21
     },
     {
         "district": "swan coastal south",
@@ -157,7 +157,7 @@
     {
         "district": "blackwood",
         "danger": "moderate",
-        "fdi": 13
+        "fdi": 12
     },
     {
         "district": "southern forests",
@@ -167,12 +167,12 @@
     {
         "district": "mortlock",
         "danger": "high",
-        "fdi": 25
+        "fdi": 26
     },
     {
         "district": "karroun",
         "danger": "high",
-        "fdi": 25
+        "fdi": 29
     },
     {
         "district": "avon",
@@ -181,13 +181,13 @@
     },
     {
         "district": "lockwood",
-        "danger": "high",
-        "fdi": 23
+        "danger": "moderate",
+        "fdi": 22
     },
     {
         "district": "arthur",
         "danger": "moderate",
-        "fdi": 16
+        "fdi": 15
     },
     {
         "district": "roe",
@@ -197,7 +197,7 @@
     {
         "district": "lakes",
         "danger": "moderate",
-        "fdi": 20
+        "fdi": 19
     },
     {
         "district": "stirling north",
@@ -212,26 +212,26 @@
     {
         "district": "stirling coast",
         "danger": "moderate",
-        "fdi": 15
+        "fdi": 14
     },
     {
         "district": "fitzgerald coast",
         "danger": "moderate",
-        "fdi": 17
+        "fdi": 16
     },
     {
         "district": "fitzgerald inland",
         "danger": "moderate",
-        "fdi": 19
+        "fdi": 18
     },
     {
         "district": "esperance coast",
         "danger": "moderate",
-        "fdi": 18
+        "fdi": 17
     },
     {
         "district": "esperance inland",
-        "danger": "high",
-        "fdi": 30
+        "danger": "moderate",
+        "fdi": 20
     }
 ]
