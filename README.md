@@ -92,7 +92,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 ## Contact
 
-Oscar Dobson-Brown - [@Oscar_DobsnBrwn](https://twitter.com/oscar_dobsnbrwn)
+Threads - [@oscar.dobsonbrown]([https://twitter.com/oscar_dobsnbrwn](https://www.threads.com/@oscar.dobsonbrown))
 
 Project Link: [https://github.com/InternetOscar/firedanger](https://github.com/InternetOscar/firedanger)
 
