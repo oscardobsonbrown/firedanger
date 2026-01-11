@@ -83,25 +83,28 @@ var CampgroundPage = () => {
 	// }
 
 	// TODO: Use a switch statement instead of elseif's
+	let campfiresPermitted;
+	let dangerMeaning;
+
 	if (dangerIndex < 12) {
-		var campfiresPermitted = "✅";
+		campfiresPermitted = "✅";
 		// leave danger colour blank to keep text colour black
-		var dangerMeaning =
+		dangerMeaning =
 			"The Fire Danger Index (FDI) is below 12 which means that the risk of fire is low.";
 	} else if (dangerIndex < 23) {
-		var campfiresPermitted = "✅";
-		var dangerMeaning = "Stay up to date and be ready to act if there is a fire.";
+		campfiresPermitted = "✅";
+		dangerMeaning = "Stay up to date and be ready to act if there is a fire.";
 	} else if (dangerIndex < 49) {
-		var campfiresPermitted = "🚫";
-		var dangerMeaning =
+		campfiresPermitted = "🚫";
+		dangerMeaning =
 			"There's a heightened risk. Be alert for fires in your area. Decide what you will do if a fire starts. If a fire starts, your life and property may be at risk. The safest option is to avoid bush fire risk areas.";
 	} else if (dangerIndex < 99) {
-		var campfiresPermitted = "🚫🚫";
-		var dangerMeaning =
+		campfiresPermitted = "🚫🚫";
+		dangerMeaning =
 			"These are dangerous fire conditions. \n Check your bush fire plan and ensure that your property is fire ready. \n If a fire starts, take immediate action. If you and your property are not prepared to the highest level, go to a safer location well before the fire impacts. \n Reconsider travel through bush fire risk areas.";
 	} else {
-		var campfiresPermitted = "🚫🚫🚫";
-		var dangerMeaning =
+		campfiresPermitted = "🚫🚫🚫";
+		dangerMeaning =
 			"These are the most dangerous conditions for a fire. \n  \n Your life may depend on the decisions you make, even before there is a fire. \n \n Stay safe by going to a safer location early in the morning or the night before. \n \n Homes cannot withstand fires in these conditions. \n \n You may not be able to leave, and help may not be available.";
 	}
 
