@@ -171,7 +171,12 @@
 		"name": "Conto",
 		"district": "",
 		"district-id": 30,
-		"coordinates": ["", ""]
+		"coordinates": ["", ""],
+		"campfireRules": {
+			"yearRound": "Campfires are not permitted in the Isaacs area at any time of year.",
+			"seasonal": "Campfires are also prohibited in the other areas during the hotter months, typically mid-November to mid-April. Check posted signs for current rules.",
+			"campgroundUrl": "https://exploreparks.dbca.wa.gov.au/site/conto-campground"
+		}
 	},
 	{
 		"name": "Credo Homestead",

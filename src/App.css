@@ -329,3 +329,7 @@ a {
 .catastrophic {
 	color: #ec5d57;
 }
+
+.campfire-rule-links a {
+	text-decoration: underline;
+}
