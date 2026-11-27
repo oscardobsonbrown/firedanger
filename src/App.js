@@ -27,8 +27,8 @@ var HomePage = () => {
 		<>
 			<h1 className="logo">FireDanger</h1>
 			<p className="subtitle">
-				FireDanger is a home-made app with the strict purpose of displaying the fire danger
-				index and whether or not you can have a campfire in todays conditions
+				FireDanger shows district fire danger information. Always check official campground
+				rules and current fire bans before lighting a campfire.
 			</p>
 			{/* <p>
 				⚠️ Please check with local authorities before lighting fires due to the summer fire ban
@@ -59,6 +59,30 @@ var CampgroundPage = () => {
 	// let makeSpace = params.name.replace(/-/g, " ");
 	let makeSpace = params.name.replaceAll("%20", " ");
 	let campgroundName = makeSpace.replaceAll("%E2%80%93", " - ");
+
+	const campground = rawData.find(({ name }) => name === campgroundName);
+	const rules = campground?.campfireRules;
+	if (rules) {
+		return (
+			<>
+				<h1>{campgroundName}</h1>
+				<h2>Campfire rules</h2>
+				<p>{rules.yearRound}</p>
+				<p>{rules.seasonal}</p>
+				<ul className="campfire-rule-links">
+					<li>
+						<a href={rules.campgroundUrl}>DBCA: {campgroundName} campground rules</a>
+					</li>
+					<li>
+						<a href="https://www.emergency.wa.gov.au/">Emergency WA: current fire bans</a>
+					</li>
+				</ul>
+				<p className="campfire-rule-links">
+					<a href="/">Check another location</a>
+				</p>
+			</>
+		);
+	}
 
 	// solution to find the values in json came from this stackoverflow piece: https://stackoverflow.com/questions/19253753/javascript-find-json-value
 	for (var x = 0; x < rawData.length; x++) {
